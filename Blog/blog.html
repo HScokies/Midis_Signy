@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style_blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="JavaSript/blog_sc.js"></script>
+    <title>Signy - Blog</title>
+</head>
+<body>
+    <header class="header" id="NavBar-Home">
+        <div class="flex header_container" id="Header">
+            <a href="../Main/main.html" class="header_logo">
+                <img src="img/logo.svg" class="header_logo" alt="logo" draggable="false">
+            </a>
+            <nav class="header_nav">
+                <ul class="header_list list_reset flex">
+                    <li class="header_list_item">
+                        <!--Dropbox#1-->
+                        <button onclick="DDabout()" class="btn_reset uppercase header_link About_dropbtn"> Про нас <img src="img/arrow.svg" id="arrow_about"></button>
+                        <div id="DD_About" class="DD_About-items">
+                            <a href="../Blog/blog.html" class="uppercase">блог</a>
+                            <a href="../Videos/Videos.html" class="uppercase">видео</a>
+                            <a href="../FAQ/FAQ.html" class="uppercase">вопросы</a>
+                        </div>
+                        <!--Dropbox#1-->
+                    </li>
+                    <li class="header_list_item">
+                        <button class="btn_reset uppercase">
+                            цены
+                        </button>
+                    </li>
+                    
+                    <li class="header_list_item">
+                        <form action="../Contacts/Contacts.html">
+                            <button class="btn_reset uppercase">
+                                Контакты
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+                <button class="btn_reset btn uppercase" style="margin-left: 32px; margin-right: 24px; width: 110px;"> Войти </button>
+                <button class="btn_reset btn uppercase" style="width: 189px;">Регистрация</button>
+                <ul class="header_list list_reset flex">
+                    <li class="header_list_item" style="margin-left: 36px;">
+                        <!--Dropbox#1-->
+                        <button onclick="DDlang()" class="btn_reset uppercase Lang_dropbtn"> язык <img src="img/arrow.svg" id="arrow_Lang"></button>
+                        <div id="DD_Lang" class="DD_Lang-items">
+                            <a href="#" class="uppercase">рус</a>
+                            <a href="#" class="uppercase">англ</a>
+                            <a href="#" class="uppercase">укрф</a>
+                        </div>
+                        <!--Dropbox#1-->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section class="Header_bottom">
+            <div class="sectionName">
+                <a href="../Main/main.html">Signy</a>
+                <p>&nbsp;/&nbsp;Блог</p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="container inter">
+            <h1 class="inter_title">Интересно пишем про</h1>
+            <div class="inter_hero flex">
+                <img class="inter_img" src="img/inter.png" alt="#">
+                <div class="inter_burn">
+                    <time class="inter_previw_time" datetime="06.05.2022">28.05.2020</time>
+                    <h2 class="burn_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                    <ul class="burn_tags">
+                        <li class="burn_tag"><a href="#" class="burn_link">про продукт</a></li>
+                        <li class="burn_tag"><a href="#" class="burn_link">теги</a></li>
+                        <li class="burn_tag"><a href="#" class="burn_link">много тегов</a></li>
+                    </ul>
+                    <p class="inter_burn_descr">Идейные соображения высшего порядка, а&nbsp;также укрепление и&nbsp;развитие структуры играет важную роль в&nbsp;формировании существенных финансовых и&nbsp;административных условий.
+                        Не&nbsp;следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и&nbsp;реализации форм развития.</p>
+                        <a href="../BlogPost/index.html" class="burn_read">Читать</a>
+                </div>
+            </div>
+        </div>
+        <div class="container all">
+            <div class="all_tabs">
+                <button class="tablinks btn_reset" onclick="openAll(event, 'Any')">Все</button>
+                <button class="tablinks btn_reset" onclick="openAll(event, 'News')">Новости</button>
+                <button class="tablinks btn_reset" onclick="openAll(event, 'Training')">Обучение</button>
+                <button class="tablinks btn_reset" onclick="openAll(event, 'Laws')">Законы</button>
+            </div>
+            <div id="Any" class="tabcontent fade">
+                <div class="all_ikons">
+                    <div class="all_burns all_burns1 all_burns2">
+                        <img class="all_img" src="img/burn1.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns all_burns1 all_burns2">
+                        <img class="all_img" src="img/burn2.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns all_burns2">
+                        <img class="all_img" src="img/burn3.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns all_burns1 all_burns2">
+                        <img class="all_img" src="img/burn1.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns all_burns1 all_burns2">
+                        <img class="all_img" src="img/burn2.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns all_burns2">
+                        <img class="all_img" src="img/burn3.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns all_burns1">
+                        <img class="all_img" src="img/burn1.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns all_burns1">
+                        <img class="all_img" src="img/burn2.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns">
+                        <img class="all_img" src="img/burn3.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="News" class="tabcontent fade">
+                <div class="all_ikons">
+                    <div class="all_burns all_burns1 all_burns2">
+                        <img class="all_img" src="img/burn1.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns all_burns1 all_burns2">
+                        <img class="all_img" src="img/burn2.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns all_burns2">
+                        <img class="all_img" src="img/burn3.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Training" class="tabcontent fade">
+                <div class="all_ikons">
+                    <div class="all_burns all_burns1 all_burns2">
+                        <img class="all_img" src="img/burn1.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                    <div class="all_burns all_burns1 all_burns2">
+                        <img class="all_img" src="img/burn2.png" alt="#">
+                        <div class="all_burn">
+                            <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                            <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                            <ul class="all_tags">
+                                <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                                <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                            </ul>
+                            <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Laws" class="tabcontent fade">
+                <div class="all_burns all_burns1 all_burns2">
+                    <img class="all_img" src="img/burn1.png" alt="#">
+                    <div class="all_burn">
+                        <time class="inter_previw_time" datetime="06.05.2022">05.03.2020</time>
+                        <h2 class="all_title">Burn Calories Quicker in&nbsp;30&nbsp;Min.</h2>
+                        <ul class="all_tags">
+                            <li class="all_tag"><a href="#" class="burn_link">про продукт</a></li>
+                            <li class="all_tag"><a href="#" class="burn_link">теги</a></li>
+                        </ul>
+                        <p class="all_burn_descr">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="all_strs">
+                <li class="all_str"><a href="#" class="tag_str tag_str_active">01</a></li>
+                <li class="all_str"><a href="#" class="tag_str">02</a></li>
+                <li class="all_str"><a href="#" class="tag_str">03</a></li>
+                <li class="all_str"><a href="#" class="tag_str">04</a></li>
+                <li class="all_str"><a href="#" class="tag_str">Дальше</a></li>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <h2 class="sub_title">
+                Подпишись на&nbsp;наши новости!
+            </h2>
+            <p class="subsc_descr">
+                Введи свой электронный адрес и&nbsp;будь в&nbsp;курсе всех обновлений
+            </p>
+            <form action="https:jsonplaceholder.typicode.com/posts" method="POST" class="form">
+                <div class="form_left">
+                    <input class="form_input" type="text" name="name" placeholder="Имя" required="">
+                    <input class="form_input" type="email" name="email" placeholder="E-mail" required="">
+                    <select class="form-select" name="country">
+                        <option value="Country" disabled="" selected="">Страна</option>
+                        <option value="United Kingdom">Россия</option>
+                        <option value="United States">США</option>
+                        <option value="France">Франция</option>
+                        <option value="Germany">Германия</option>
+                        <option value="Spain">Испания</option>
+                        <option value="Estonia">Эстония</option>
+                    </select>
+                </div>
+                <button class="btn btn_reset form_btn">Отправить</button>
+            </form>
+        </div>
+        <div class="seo_text">
+            <input type="checkbox" class="read-more-checker" id="read-more-checker">
+            <div class="limiter">
+                <h2 class="seo_title">SEO текст</h2>
+                <p class="seo_descr">
+                    Разнообразный и&nbsp;богатый опыт дальнейшее развитие различных форм деятельности требуют от&nbsp;нас анализа существенных финансовых и&nbsp;административных условий. Задача организации, в&nbsp;особенности&nbsp;же укрепление и&nbsp;развитие структуры позволяет оценить значение новых предложений. С&nbsp;другой стороны постоянный количественный рост и&nbsp;сфера нашей активности требуют от&nbsp;нас анализа позиций, занимаемых участниками в&nbsp;отношении поставленных задач. Задача организации, в&nbsp;особенности&nbsp;же дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по&nbsp;разработке соответствующий условий активизации. Разнообразный и&nbsp;богатый опыт начало повседневной работы по&nbsp;формированию позиции обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании новых предложений. Задача организации, в&nbsp;особенности&nbsp;же укрепление и&nbsp;развитие структуры обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании существенных финансовых и&nbsp;административных условий.
+                </p>
+                <p class="seo_descr">
+                    Повседневная практика показывает, что реализация намеченных плановых заданий позволяет выполнять важные задания по&nbsp;разработке системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации позволяет
+                </p>
+                <h2 class="seo_title">Повседневная практика показывает</h2>
+                <p class="seo_descr">
+                    Разнообразный и&nbsp;богатый опыт рамки и&nbsp;место обучения кадров представляет собой интересный эксперимент проверки форм развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании дальнейших направлений развития. Не&nbsp;следует, однако забывать, что укрепление и&nbsp;развитие структуры позволяет оценить значение направлений прогрессивного развития. С&nbsp;другой стороны консультация с&nbsp;широким активом влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации позиций, занимаемых участниками в&nbsp;отношении поставленных задач. Значимость этих проблем настолько очевидна, что постоянный количественный рост и&nbsp;сфера нашей активности в&nbsp;значительной степени обуславливает создание новых предложений.
+                </p>
+                <h2 class="seo_title">Реализация намеченных плановых</h2>
+                <p class="seo_descr">
+                    Равным образом сложившаяся структура организации требуют определения и&nbsp;уточнения системы обучения кадров, соответствует насущным потребностям. Товарищи! консультация с&nbsp;широким активом влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации направлений прогрессивного развития. Идейные соображения высшего порядка, а&nbsp;также постоянный количественный рост и&nbsp;сфера нашей активности позволяет выполнять важные задания по&nbsp;разработке соответствующий условий активизации.
+                </p>
+                <p class="seo_descr">
+                    Значимость этих проблем настолько очевидна, что новая модель организационной деятельности способствует подготовки и&nbsp;реализации новых предложений. Товарищи! консультация с&nbsp;широким активом влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. С&nbsp;другой стороны рамки и&nbsp;место обучения кадров играет важную роль в&nbsp;формировании систем массового участия. Товарищи! новая модель организационной деятельности влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития.
+                </p>
+                <p class="seo_descr">
+                    С&nbsp;другой стороны постоянный количественный рост и&nbsp;сфера нашей активности позволяет выполнять важные задания по&nbsp;разработке форм развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и&nbsp;сфера нашей активности в&nbsp;значительной степени обуславливает создание соответствующий условий активизации. Равным образом реализация намеченных плановых заданий играет важную роль в&nbsp;формировании форм развития.
+                </p>
+             <div class="bottom"></div>
+            </div>
+            <label for="read-more-checker" class="read-more-button"></label>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="foot flex">
+            <div class="foot_container">
+                <img src="img/Footer_logo.svg" alt="Logo_Footer">
+                <p class="Graytext_Footer" style="margin-top: 104px;">
+                    &copy;&nbsp;2020 Signy
+                </p>
+            </div>
+            <div class="footer_container flex">
+                <div style="margin-right: 33px;">
+                    <ul class="list_reset">
+                        <li><a href="../About/About.html" class="foot_link">Про нас</a></li>
+                        <li><a href="#" class="foot_link">Цены</a></li>
+                    </ul>
+                    <ul class="list_reset" style="margin-top: 32px;">
+                        <li><a href="#" class="foot_link">Вход</a></li>
+                        <li><a href="#" class="foot_link">Регистрация</a></li>
+                    </ul>
+                    <p class="Graytext_Footer" style="margin-top: 16px;">Договор оферты</p>
+                </div>
+                <div>
+                    <ul class="list_reset">
+                        <li><a href="../Blog/blog.html" class="foot_link">Блог</a></li>
+                        <li><a href="../Contacts/Contacts.html" class="foot_link">Контакты</a></li>
+                    </ul>
+                    <p class="Graytext_Footer" style="margin-top: 98px;">Безопастность сервиса</p>
+                </div>
+            </div>
+            <div class="foot_container flex">
+                <div style="margin-right: 40px;">
+                    <p>infosmartsign@smarttender.biz</p>
+                    <p>Telegram</p>
+                </div>
+    
+                <div class="Graytext_Footer2" style="margin-right: 24px;">
+                    <ul class="list_reset">
+                        <li>55266 Marcel Glen Suite 748 South Elliotchester, AR 63951</li>
+                        <li>+1-932-847-5476</li>
+                        <li>(376) 304-9537 x80419</li>
+                        <li>1-654-914-8180 x51616</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
