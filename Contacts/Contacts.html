@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signy - Contacts</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="Scripts/Navbar.js"></script>
+</head>
+
+<body>
+    <header class="header" id="NavBar-Home">
+        <div class="container flex header-container" id="Header">
+            <a href="../Main/main.html" class="header-logo">
+                <img src="img/[Header] Logo.svg" class="header-logo" alt="logo" draggable="false">
+            </a>
+
+            <nav class="header-nav" style="display: flex; flex-direction: row;">
+                <ul class="header-list list-reset flex">
+                    <li class="header-list-item">
+                        <!--Dropbox#1-->
+                        <button onclick="DDabout()" class="btn-reset uppercase header-link About_dropbtn"> Про нас <img src="img/[Header] Arrow.svg" id="arrow_about"></button>
+                        <div id="DD_About" class="DD_About-items">
+                            <a href="../Blog/blog.html" class="uppercase">блог</a>
+                            <a href="../Videos/Videos.html" class="uppercase">видео</a>
+                            <a href="../FAQ/FAQ.html" class="uppercase">вопросы</a>
+                        </div>
+                        <!--Dropbox#1-->
+                    </li>
+                    <li class="header-list-item">
+                        <button class="btn-reset uppercase">
+                            цены
+                        </button>
+                    </li>
+                    
+                    <li class="header-list-item">
+                        <a href="../Contacts/Contacts.html">
+                            <button class="btn-reset uppercase">
+                                Контакты
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn-reset btn uppercase" style="margin-left: 32px; margin-right: 24px; width: 110px;"> Войти </button>
+                <button class="btn-reset btn uppercase" style="width: 189px;">Регистрация</button>
+                <ul class="header-list list-reset flex">
+                    <li class="header-list-item" style="margin-left: 36px;">
+                        <!--Dropbox#1-->
+                        <button onclick="DDlang()" class="btn-reset uppercase Lang_dropbtn"> язык <img src="img/[Header] Arrow.svg" id="arrow_Lang"></button>
+                        <div id="DD_Lang" class="DD_Lang-items">
+                            <a href="#" class="uppercase">рус</a>
+                            <a href="#" class="uppercase">англ</a>
+                            <a href="#" class="uppercase">укрф</a>
+                        </div>
+                        <!--Dropbox#1-->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section class="Header_bottom">
+            <div class="sectionName">
+                <p ><a href="../Main/main.html">Signy</a>&nbsp;/&nbsp;Наши контакты</p>
+            </div>
+        </section>
+        </header>
+       <main> 
+        <h1>Наши контакты</h1>
+        <div class="main-mapholder">
+         
+          <div class="contacts"> 
+              <div class="text-contacts"> 
+                  <p >Мы всегда рады ответить на ваши вопросы и развивать<br> эффективное сотрудничество по всем вопросам,<br> связанным с электронным документооборотом.</p>
+              </div>
+           
+              <div class="text-contacts1">
+                 <ul>
+                     <li><img class="img-phone" src="img/Phone.svg"> +1-932-847-5476</li>
+                     <li class="bebra-number">(376) 304-9537 x80419</li>
+                     <li class="bebra-number">1-654-914-8180 x51616</li>
+                     <li ><img class="img-mail" src="img/mail.svg">infosmartsign@smarttender.biz</li>
+                     <li><img class="img-local" src="img/local.svg">55266 Marcel Glen Suite 748 South Elliotchester, AR 63951</li>
+                </ul>
+            </div>
+           </div>
+           <div class="card-world">
+            <iframe class="card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1286.1457054247583!2d-94.17657127927956!3d35.67986351338477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cbc580acc0084b%3A0xe8b6cbe9786022e8!2sChester%20Farmers%20Market!5e0!3m2!1sru!2sru!4v1652607471905!5m2!1sru!2sru" width="605"  height="249" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        </div>
+        
+      
+        
+        <div class="write">
+        <h1><strong>...или напиши нам:</strong></h1>
+       
+        <form class="form">
+            <div><p>Имя:*</p></div>
+            <input class="text" type="text" name="name" required="required"placeholder="    Иван" >
+            <div><p>Электронная почта:*</p></div>
+            <input class="text" type="email" name="email" required="required" placeholder="    ivan@mail.com">
+            <div><p>Телефон:*</p></div>
+            <input class="text" type="number " name="number " required="required" placeholder="    +38 000 000 00 00">
+            <div><p>Сообщения:*</p></div>
+            <textarea class="message" name="message" cols="30" rows="4" placeholder="     Введите тут"></textarea>
+            <div></div>
+            <input class="button" type="submit" name="submit_btn" value="Отправить">
+            </form>
+        </div>
+        </main>
+        <div class="foot flex">
+            <div class="foot-container" style="margin-left: 103px;">
+                <img src="img/[Footer] Logo.svg" alt="Logo_Footer">
+                <p class="Graytext_Footer" style="margin-top: 104px;">
+                    &copy;&nbsp;2020 Signy
+                </p>
+            </div>
+
+            <div class="foot-container flex">
+                <div style="margin-right: 33px;">
+                    <ul class="list-reset">
+                        <li><a href="../About/About.html">Про нас</a></li>
+                        <li>Цены</li>
+                    </ul>
+                    <ul class="list-reset" style="margin-top: 32px;">
+                        <li>Вход</li>
+                        <li>Регистрация</li>
+                    </ul>
+                    <p class="Graytext_Footer" style="margin-top: 16px;">украинские букавы</p>
+                </div>
+                <div>
+                    <ul class="list-reset">
+                        <li><a href="../Blog/blog.html">Блог</a></li>
+                        <li><a href="../Contacts/Contacts.html">Контакты</a></li>
+                    </ul>
+                    <p class="Graytext_Footer" style="margin-top: 98px;">украинские букавы</p>
+                </div>
+            </div>
+
+            <div class="foot-container flex">
+                <div style="margin-right: 40px;">
+                    <p>infosmartsign@smarttender.biz</p>
+                    <p>Lifeinvader</p>
+                </div>
+    
+                <div class="Graytext_Footer2" style="margin-right: 24px;">
+                    <ul class="list-reset">
+                        <li>55266 Marcel Glen Suite 748 South Elliotchester, AR 63951</li>
+                        <li>+1-932-847-5476</li>
+                        <li>(376) 304-9537 x80419</li>
+                        <li>1-654-914-8180 x51616</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>

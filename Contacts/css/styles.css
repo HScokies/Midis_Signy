@@ -1,0 +1,438 @@
+html {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.main{
+    display: block;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1440px;
+    padding: 0 100px;
+    font-family: 'IBM Plex Serif';
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;  /*отменяет маркеры*/
+}
+
+.btn-reset {
+    border: none;
+    background-color: transparent;   /*устанавливает прозраченый фон*/
+    cursor: pointer;  /*чтоб было видно курсор*/
+    height: 40px;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 130%;
+}
+
+.section-descr {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+}
+
+.section-offset {
+    padding-top: 87px;
+    padding-bottom: 160px;
+}
+
+/*header*/
+#Header{
+    width: 1200px;
+    margin-left: 104px;
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    
+}
+.header {
+    padding: 36px 0;
+}
+
+.header-container {
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: auto;
+    width: 130.22px;
+    height: 40px;
+}
+
+.header-nav {
+    text-transform: uppercase;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 36px;  
+}
+.btn{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.19em;
+    color: rgba(6, 18, 36, 0.9);
+    border: 1px solid #1064E5;
+    border-radius: 45px;
+    text-transform: uppercase;
+    height: 40px;
+    
+}
+.btn:hover{
+    background-color: #1064E5;
+    color: white;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+/*Дропбоксы*/
+
+/*DD_About*/
+#DD_About{
+    margin-top: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .DD_About-items{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+    background-color: #EFF6FD;
+  }
+  .DD_About-items a {
+    color: #061224;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .DD_About-items a:hover {background-color: #E2EDFB;}
+  
+  /*DD_Language*/
+#DD_Lang{
+    margin-top: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .DD_Lang-items{
+    display: none;
+    position: absolute;
+    background-color: #EFF6FD;
+    z-index: 1;
+    margin-top: 10px;
+  }
+  .DD_Lang-items a {
+    color: #061224;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .DD_Lang-items a:hover {background-color: #E2EDFB;}
+  .show {display:block;}
+  /**/
+  .sectionName{
+    margin-left: 103px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 48px;
+    color: #6a717c;
+  }
+  .sectionName a:hover{
+      text-decoration: underline;
+  }
+  .btn{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.19em;
+    color: rgba(6, 18, 36, 0.9);
+    border: 1px solid #1064E5;
+    border-radius: 45px;
+    text-transform: uppercase;
+    height: 40px;
+    
+}
+.btn:hover{
+    background-color: #1064E5;
+    color: white;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+h1{
+    width: 1200px;
+    margin-left: 112px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 42px;
+    color: rgba(6, 18, 36, 0.9);
+}
+
+.contacts h1{
+margin-top: 20px;
+}
+.contacts p{
+margin-left: 110px;
+font-size:1.1rem;
+line-height: 30px;
+}
+.contacts ul{
+    list-style-type: none;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-left: 80px;  
+}
+.card{ 
+    display: flex;  
+}
+/*Subscribe*/
+.SubPanel{
+    background-color: #D8F1F0;
+    height: 298px;
+    width: 1440px;
+}
+.SubIn, .SubOut{
+    padding-top: 50px;
+    margin-left: 388px;
+    Width: 663px;
+    Height: 191px;
+}
+.SubIn h2, .SubOut h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgba(6, 18, 36, 0.9);
+    text-align: center;
+}
+.SubIn p, #Msg{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: rgba(6, 18, 36, 0.9);
+    text-align: center;
+}
+.SubIn input{
+    outline: none;
+    margin-left: 34px;
+    width: 399px;
+    height: 50px;
+    border-radius: 37px;
+    padding: 17px 22px;
+}
+.input_border{
+    border: 1px solid #1064E5;
+}
+.SubIn input:focus{
+    border: 2px solid #1064E5;
+}
+/*Invalid & Valid email*/
+.valid{
+    border: 1px solid #01B754;
+    background-image: url(../img/Valid_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 370px;
+}
+.invalid{
+    border: 1px solid #B70101;
+    background-image: url(../img/InValid_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 370px;
+}
+#invalid_err{
+    color: #B70101;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 27px;
+    margin-left: 55px;
+}
+.SubIn button{
+    margin-left: 18px;
+    width: 178px;
+    height: 50px;
+}
+#Div2{
+    display: none;
+}
+.footer{
+    margin-top: 48px;
+    margin-left: 105px;
+   
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    height: 50px;
+   
+    width: 100%;
+
+    
+}
+.foot{
+    height: 288px;
+    padding-top: 64px;
+    justify-content: space-between;
+    background-color: #061224;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    width: 1440px;
+}
+.foot-container{
+    height: 168px;
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+}
+.Graytext_Footer{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    opacity: 0.4;
+}
+.Graytext_Footer2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.8;
+    width: 242px;
+}
+.foot li:not(:first-child) {
+    margin-top: 3px;
+}
+.foot p{
+    margin-top: 0; margin-bottom: 0;
+}
+.Email {
+    width: 706px;
+    height: 60px;
+    left: 367px;
+    top: 4106px;
+
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: #D2D2D2;;
+}
+
+.text-contacts{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;   
+    
+}
+.text-contacts1{
+    
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form{
+    margin-left: 100px;
+}
+.text{
+    border-radius: 48px;
+    border: 1px solid;
+    width: 420px;
+    height: 50px;
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+}
+.message{
+    border-radius: 8px;
+    border: 1px solid;
+    width: 420px;
+    height: 138px;
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+}
+.button{
+    color: white;
+    border-radius: 45px;
+    border: 0;
+    width: 217px;
+    height: 50px;
+    background-color: #2d7df5;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+}
+.bebra-number{
+    margin-left: 44px;
+}
+
+.img-mail{
+    margin-right: 20px;
+}
+.img-local{
+    margin-right: 28px;
+}
+.img-phone{
+    margin-right: 20px;
+}
+.main-mapholder{
+    display: flex;
+    
+}
+h1{
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+}
